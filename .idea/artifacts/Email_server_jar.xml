@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Email_server:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Email_server_jar</output-path>
+    <root id="archive" name="Email_server.jar">
+      <element id="module-output" name="Email_server" />
+      <element id="extracted-dir" path="$USER_HOME$/Google Drive/Java_saved_files/Plugins/mail-1.4.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
