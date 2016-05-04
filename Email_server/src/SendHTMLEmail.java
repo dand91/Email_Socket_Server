@@ -1,3 +1,8 @@
+import javax.mail.*;
+import javax.mail.internet.InternetAddress;
+import javax.mail.internet.MimeBodyPart;
+import javax.mail.internet.MimeMessage;
+import javax.mail.internet.MimeMultipart;
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
@@ -5,16 +10,6 @@ import java.io.IOException;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
 import java.util.Properties;
-
-import javax.mail.BodyPart;
-import javax.mail.Message;
-import javax.mail.MessagingException;
-import javax.mail.Session;
-import javax.mail.Transport;
-import javax.mail.internet.InternetAddress;
-import javax.mail.internet.MimeBodyPart;
-import javax.mail.internet.MimeMessage;
-import javax.mail.internet.MimeMultipart;
 
 
 public class SendHTMLEmail {
@@ -52,8 +47,12 @@ public class SendHTMLEmail {
 		      System.out.println("<debug> Email processing </debug>");
 
 		      StringBuilder sb = null;
-		      
-		      try(BufferedReader br = new BufferedReader(new FileReader(HTMLFILE))) {
+
+            BufferedReader br = null;
+
+            try{
+                br  =  new BufferedReader(new FileReader(HTMLFILE));
+
 		    	    sb = new StringBuilder();
 		    	    String line = br.readLine();
 
