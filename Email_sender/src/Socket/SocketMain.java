@@ -1,5 +1,7 @@
 package Socket;
 
+import Email_Server.SendHTMLEmail;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;

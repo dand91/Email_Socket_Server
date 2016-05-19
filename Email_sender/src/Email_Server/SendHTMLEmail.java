@@ -16,7 +16,7 @@ import java.util.Properties;
 
 public class SendHTMLEmail {
 
-    private static final String FROM = "admin@murkla.se";
+    private static final String FROM = "admin@murkla.no-ip.org";
     private static final String HOST = "localhost";
     private static final String HTMLFILE = "index.html";
     private static final String PATH = "images/";
